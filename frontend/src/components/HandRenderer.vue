@@ -13,12 +13,40 @@ export default {
   },
   props:
   {
-    playerHand:{required:true,type:Array}
+    playerHand:{required:true,type:Array,default:function(){return []}}
   }
   ,methods: {
-    getCardSvgUrl(card) {
-      return `/assets/cards/${card.rank}_of_${card.suit}.svg`;
+    getCardSvgUrl(card)
+    {
+      var rankLookup =
+      {
+        "Q":"queen"
+        ,"K":"king"
+        ,"J":"jack"
+        ,"A":"ace"
+      }
+      var suitLookup=
+      {
+        "♦":"diamonds"
+        ,"♣":"clubs"
+        ,"♠":"spades"
+        ,"♥":"hearts"
+      }
+      // return `/assets/cards/${rankLookup[card.rank] || card.rank}_${suitLookup[card.suit]}.svg`;
+      return require(`@/assets/cards/${suitLookup[card.suit]}_${rankLookup[card.rank] || card.rank}.svg`);
     }
   }
 };
 </script>
+
+<style scoped>
+.hand
+{
+  display: flex;
+  justify-content: center;
+}
+.card
+{
+  margin:10px
+}
+</style>

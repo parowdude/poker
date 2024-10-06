@@ -4,20 +4,21 @@
     <button @click="dealCards">Deal Cards</button>
     <div v-if="hand.length > 0">
       <h2>Your Hand</h2>
-      <ul>
+      <handRenderer :playerHand="hand" />
+      <!-- <ul>
         <li v-for="(card, index) in hand" :key="index">
           {{ card.rank }} {{ card.suit }}
         </li>
-      </ul>
+      </ul> -->
 
-      <h3>Hand Evaluation: {{ evaluation }}</h3>
+      <h2>Hand Evaluation: {{ evaluation }}</h2>
     </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-
+import handRenderer from './HandRenderer.vue'
 export default {
   data()
   {
@@ -39,13 +40,17 @@ export default {
       }
     }
   }
+  ,components:
+  {
+    handRenderer
+  }
 };
 </script>
 
 <style scoped>
 .poker-game {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 ul {
