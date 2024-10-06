@@ -51,8 +51,8 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```
-git clone https://github.com/your-username/poker-game.git
-cd poker-game ```
+git clone https://github.com/parowdude/poker-game.git
+cd poker-game
 # Install Dependencies
 npm install
 cd frontend
