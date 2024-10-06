@@ -1,7 +1,7 @@
 # 🎲 Poker Game (Five-Card Draw) 🃏
 
 Welcome to **Poker Game**, a simplified console-based variant of Five-Card Draw poker, where players are dealt five cards, but no swapping is allowed.\
-This application is built using **Node.js** for the back-end and **Vue.js** for a smooth interactive front-end.\
+This application is built using **Node.js** for the back-end and **Vue.js** for a smooth interactive front-end.
 
 ## Features
 
@@ -29,6 +29,7 @@ This application is built using **Node.js** for the back-end and **Vue.js** for 
 - **Express** (API server)
 - **Axios** (HTTP requests)
 - **Concurrently** (Run frontend & backend together)
+- **Jest** (Unit Test Suite)
 
 ## 🎮 Game Flow
 
@@ -45,8 +46,8 @@ This application is built using **Node.js** for the back-end and **Vue.js** for 
 
 Ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/en/)
-- [Vue CLI](https://cli.vuejs.org/)
+- [Node.js](https://nodejs.org/en/) 12.6.0 (Easy with NVM:Node Version Manager)
+- [Vue CLI](https://cli.vuejs.org/) (For vue2)
 
 ### Clone the Repository
 
