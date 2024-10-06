@@ -2,7 +2,7 @@ class PokerHandEvaluator
 {
     static evaluateHand(hand)
     {
-        console.log("Got hand",hand);
+        // console.log("Got hand",hand);
 
         const ranks = hand.cards.map(card => card.rank);
         const suits = hand.cards.map(card => card.suit);
