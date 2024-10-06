@@ -66,8 +66,8 @@ The game comes with both a back-end API and a front-end Vue.js interface. You ca
 To run both the backend and the frontend:
 
 `npm run dev`\
-Backend runs on http://localhost:3000.\
-Frontend runs on http://localhost:8080.\
+Backend runs on http://localhost:3000. \
+Frontend runs on http://localhost:8080. \
 Open the browser and go to http://localhost:8080 to play the game.
 
 
