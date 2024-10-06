@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/parowdude/poker#readme",
   "dependencies": {
-    "concurrently": "^9.0.1",
+    "concurrently": "^7.6.0",
     "cors": "^2.8.5",
     "express": "^4.21.0"
   }
