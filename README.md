@@ -60,13 +60,11 @@ npm install
 ```
 
 ## 🎲 Running the Game
-The game comes with both a back-end API and a front-end Vue.js interface. You can run both simultaneously with Concurrently.\
+The game comes with both a back-end API and a front-end Vue.js interface. You can run both simultaneously with Concurrently.
 
 ### Development Mode
 To run both the backend and the frontend:
 
-bash
-Copy code
 `npm run dev`\
 Backend runs on http://localhost:3000.\
 Frontend runs on http://localhost:8080.\
