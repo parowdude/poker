@@ -26,9 +26,12 @@ class Deck
     shuffle()
     {
         // Fisher–Yates shuffle
+        // Loop over the deck starting from the last element, moving backwards
         for (let i = this.deck.length - 1; i > 0; i--)
         {
+            // Generate a random index `j` between 0 and `i` (inclusive)
             const j = Math.floor(Math.random() * (i + 1));
+            // Swap the element at index `i` with the element at index `j`
             [this.deck[i], this.deck[j]] = [this.deck[j], this.deck[i]];
         }
     }
